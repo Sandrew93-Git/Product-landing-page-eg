@@ -1,0 +1,138 @@
+<html>
+    <style>
+#header {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+        #header-img{
+  float: left;
+  display: block;
+
+  padding: 14px 16px;
+        }
+/* Links inside the navbar */
+.nav-link {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.nav-link:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 100px;
+text-align: center;
+    font-family: serif;
+}
+
+        #features{
+    padding-top:100px;
+        }
+        
+        #review{
+            padding-top: 100px;
+        }
+        #purchasing{
+            padding-top: 100px;
+        }
+        .flexbox{
+          display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+        }
+        .flexbox p{
+            display:flex;
+                       justify-content:center;
+            padding:15px;
+max-width: 600px;
+    width: 100%;
+
+        }
+        #flex-img{
+            max-width:100%;
+            height:auto;
+}
+        #formborder form{
+            display:flex;
+             flex-direction: column;
+                       justify-content:center;
+            padding:15px;
+max-width: 600px;
+    width: 100%;
+            border-style:solid;
+}    
+
+@media only screen and (max-width: 600px) {
+      .main {
+      font-family: sans-serif;
+  }
+</style>
+    
+    <script id="script" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+    
+<header id="header">
+    <img id="header-img"  height="69" src="scumfrog.jpg" alt="scum frog logo">
+<nav id="nav-bar">
+<a class="nav-link" href="#purchasing">Purchasing</a>
+<a class="nav-link" href="#review">Review Video</a>
+<a class="nav-link" href="#features">Features</a>
+</nav>
+    
+</header>
+    
+<body class="main">
+    <div id="intro"class="flexbox" >
+    <h1>Launch Series by Scum Frog</h1><br><br>
+    <p> Enter your email to sign up to our newsletter, where you will recieve tips on effective techniques for frog fishing.</p>
+</div>
+
+<div id="formborder" class="flexbox">
+    <form id="form"action="https://www.freecodecamp.com/email-submit">
+<input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+      <input type="submit" id ="submit" name="submit" value="Get Fishing" color="green">
+    </form>
+</div>
+    
+    <div id="features" class="flexbox">
+        <h2>Key Features</h2>
+    <p>Featuring a proprietary tungsten “parasite” weight system with integrated locking tabs, which enable the weight of the Scum Frog Launch Frog to be attached securely on the shank of the hook to ensure proper weight distribution for longer casts and consistent performance. It is also built with a wide body and a brass button tail weight that allows it to sit in a nose up position to make walking the dog extremely easy.</p>
+
+<p>To ensure a high hook up ratio, the Scum Frog Launch Frog is equipped with a super soft high compression body and a premium 5/0 Owner red double frog hook that creates increased hook penetration and a high fish landing ratio. Finished with a premium 40-strand silicone skirt tail for added flaring action, the Scum Frog Launch Frog is available in digitally printed colors to provide the most realistic presentation.</p>
+   </div> 
+    <br>
+    <div id="review" class="flexbox">
+        <h2>Average Ontario Anglers review</h2>
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/E37Rta52xno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+   
+    <div id="purchasing"class="flexbox">
+        <h2>Available for purchase</h2>
+        <p>The Launch Series is available at any retail stores that sell Scum Frog products for $12.99
+        </p>
+          </div>
+        
+   
+            
+<div class="flexbox">
+    <img id="flex-img" src="scumfroglineup.jpg" alt="scum frog lineup">
+    <img id="flex-img" src="scumfrogside.jpg" alt="scum frog side profile">
+</div>
+ 
+  
+    
+    </body>
+    
+    </html>
